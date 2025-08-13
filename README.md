@@ -1,10 +1,10 @@
-# CloudChef 🍳
+# AIChef 🍳
 
-CloudChef is an intelligent recipe generator that creates delicious recipes based on ingredients you have at home. Powered by AI, it helps you discover new culinary possibilities with whatever you have in your kitchen.
+AIChef is an intelligent recipe generator that creates delicious recipes based on ingredients you have at home. Powered by AI, it helps you discover new culinary possibilities with whatever you have in your kitchen.
 
 ## 🌐 Live Demo
 
-**[Try CloudChef Live](https://keshf-aichef.netlify.app/)** - Experience the app in action!
+**[Try AIChef Live](https://keshf-aichef.netlify.app/)** - Experience the app in action!
 
 ## ✨ Features
 
@@ -26,8 +26,8 @@ CloudChef is an intelligent recipe generator that creates delicious recipes base
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/cloudchef.git
-cd cloudchef
+git clone https://github.com/yourusername/aichef.git
+cd aichef
 ```
 
 2. Install dependencies:
@@ -51,7 +51,7 @@ npm run dev
 
 ## ⚙️ Configuration
 
-CloudChef uses AI services to generate recipes. You'll need to set up API credentials:
+AIChef uses AI services to generate recipes. You'll need to set up API credentials:
 
 1. Create a `.env` file in the project root
 2. Add your API key:

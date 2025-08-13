@@ -68,13 +68,9 @@ export default function Main() {
 
   return (
     <main>
-      <section className="instructions" style={{ marginBottom: "1.5rem" }}>
-        <h2>Welcome to CloudChef!</h2>
-        <p>
-          Enter your ingredients below and click "Add ingredients". When you
-          have at least 4, click "Get a recipe" to let AI Chef create a recipe
-          for you!
-        </p>
+            <section className="instructions" style={{ marginBottom: "1.5rem" }}>
+        <h2>Welcome to AIChef!</h2>
+        <p>Enter your ingredients below and click "Add ingredients". When you have at least 4, click "Get a recipe" to let AI Chef create a recipe for you!</p>
       </section>
 
       <IngredientsForm addIngredient={addIngredient} />
