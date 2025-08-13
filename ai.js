@@ -19,10 +19,19 @@ You are an assistant that receives a list of ingredients that a user has and sug
 // Claude/Anthropic code removed as requested
 
 // Use Vite environment variable: VITE_HF_ACCESS_TOKEN
-// Use Vite environment variable: VITE_HF_ACCESS_TOKEN
-const hf = new HfInference(import.meta.env.VITE_HF_ACCESS_TOKEN);
+const HF_TOKEN = import.meta.env.VITE_HF_ACCESS_TOKEN;
+
+if (!HF_TOKEN) {
+  console.error("⚠️ Missing VITE_HF_ACCESS_TOKEN environment variable. Please check your .env file.");
+}
+
+const hf = new HfInference(HF_TOKEN);
 
 export async function getRecipeFromMistral(ingredientsArr) {
+  if (!HF_TOKEN) {
+    throw new Error("API token not configured. Please set up your environment variables.");
+  }
+  
   const ingredientsString = ingredientsArr.join(", ");
   try {
     const response = await hf.chatCompletion({
@@ -38,6 +47,7 @@ export async function getRecipeFromMistral(ingredientsArr) {
     });
     return response.choices[0].message.content;
   } catch (err) {
-    console.error(err.message);
+    console.error("Recipe generation failed:", err.message);
+    throw new Error("Failed to generate recipe. Please try again.");
   }
 }

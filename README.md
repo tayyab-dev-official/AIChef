@@ -2,6 +2,10 @@
 
 CloudChef is an intelligent recipe generator that creates delicious recipes based on ingredients you have at home. Powered by AI, it helps you discover new culinary possibilities with whatever you have in your kitchen.
 
+## 🌐 Live Demo
+
+**[Try CloudChef Live](https://keshf-aichef.netlify.app/)** - Experience the app in action!
+
 ## ✨ Features
 
 - **Smart Recipe Generation**: Enter your available ingredients and get personalized recipe suggestions
