@@ -4,7 +4,6 @@ import IngredientsList from "./components/IngredientsList";
 import AIRecipe from "./components/AIRecipe";
 import { getRecipeFromMistral } from "./ai";
 
-
 export default function Main() {
   const [ingredients, setIngredients] = React.useState([]);
   const [recipe, setRecipe] = React.useState("");
@@ -52,7 +51,10 @@ export default function Main() {
     function () {
       if (isLoading && recipeSection.current) {
         setTimeout(() => {
-          recipeSection.current.scrollIntoView({ behavior: "smooth", block: "center" });
+          recipeSection.current.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
         }, 100);
       }
     },
@@ -68,7 +70,11 @@ export default function Main() {
     <main>
       <section className="instructions" style={{ marginBottom: "1.5rem" }}>
         <h2>Welcome to CloudChef!</h2>
-        <p>Enter your ingredients below and click "Add ingredients". When you have at least 4, click "Get a recipe" to let AI Chef create a recipe for you!</p>
+        <p>
+          Enter your ingredients below and click "Add ingredients". When you
+          have at least 4, click "Get a recipe" to let AI Chef create a recipe
+          for you!
+        </p>
       </section>
 
       <IngredientsForm addIngredient={addIngredient} />
@@ -82,7 +88,11 @@ export default function Main() {
       )}
 
       {isLoading && (
-        <section className="ai-loading-message" aria-live="polite" ref={recipeSection}>
+        <section
+          className="ai-loading-message"
+          aria-live="polite"
+          ref={recipeSection}
+        >
           <h3>AI Chef is generating your recipe...</h3>
         </section>
       )}

@@ -20,21 +20,25 @@ CloudChef is an intelligent recipe generator that creates delicious recipes base
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/cloudchef.git
 cd cloudchef
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Set up your AI API credentials:
+
    - Create a `.env` file in the root directory
    - Add your AI service API key (see Configuration section)
 
 4. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -47,6 +51,7 @@ CloudChef uses AI services to generate recipes. You'll need to set up API creden
 
 1. Create a `.env` file in the project root
 2. Add your API key:
+
 ```env
 VITE_AI_API_KEY=your_api_key_here
 ```

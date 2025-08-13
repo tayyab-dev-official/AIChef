@@ -6,12 +6,12 @@ You are an assistant that receives a list of ingredients that a user has and sug
 `;
 
 // 🚨👉 ALERT: Read message below! You've been warned! 👈🚨
-// If you're following along on your local machine, make sure 
-// you don't commit your API keys to any repositories and don't 
-// deploy your project anywhere live online. Otherwise, anyone 
-// could inspect your source and find your API keys/tokens. 
-// If you want to deploy this project, you'll need to create a 
-// backend of some kind, either your own or using some serverless 
+// If you're following along on your local machine, make sure
+// you don't commit your API keys to any repositories and don't
+// deploy your project anywhere live online. Otherwise, anyone
+// could inspect your source and find your API keys/tokens.
+// If you want to deploy this project, you'll need to create a
+// backend of some kind, either your own or using some serverless
 // architecture where
 // your API calls can be made. Doing so will keep your
 // API keys private.
